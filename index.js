@@ -9,7 +9,7 @@ const { errorHandler } = require('./middleware')
 const app = express()
 // middleware
 app.use(bodyParser.json())
-app.use(cors({ origin:'https://eternal-plans.netlify.app'}))
+app.use(cors({ origin:'https://eternalplans.netlify.app'}))
 app.use('/api/eternalplans', eternalplansRoutes)
 app.use(errorHandler)
 
